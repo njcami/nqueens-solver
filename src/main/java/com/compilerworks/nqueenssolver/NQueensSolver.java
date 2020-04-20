@@ -26,7 +26,7 @@ public class NQueensSolver {
         final int boardSize = validateArgumentAndGetBoardSize(args);
         if (boardSize > 0) {
             final long startTime = System.currentTimeMillis();
-            final NQueensSolver nQueensSolver = new NQueensSolver(boardSize, false);
+            final NQueensSolver nQueensSolver = new NQueensSolver(boardSize, true);
             nQueensSolver.solve();
             System.out.println("(Processing time was " + (System.currentTimeMillis() - startTime) + "ms)");
         }
