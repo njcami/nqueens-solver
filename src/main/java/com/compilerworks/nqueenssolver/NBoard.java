@@ -30,7 +30,7 @@ public class NBoard {
      * @param onlyIfNonCollinear print the solution only if it is non-collinear.
      * @return true if printed, false if not.
      */
-    public boolean printBoard(boolean onlyIfNonCollinear) {
+    public boolean printBoard(final boolean onlyIfNonCollinear) {
         if (!onlyIfNonCollinear || isNonCollinear(board)) {
             for (int i : board) {
                 System.out.print(" " + i);

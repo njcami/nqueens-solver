@@ -22,7 +22,7 @@ public class NQueensSolver {
         this.onlyNonCollinearSolutions = onlyNonCollinearSolutions;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         final int boardSize = validateArgumentAndGetBoardSize(args);
         if (boardSize > 0) {
             final long startTime = System.currentTimeMillis();
@@ -65,7 +65,7 @@ public class NQueensSolver {
      * a solution would have been found.
      * @param column the column at which the queen is going to be placed.
      */
-    private void solveQueenPositionsStartingByColumn(int column) {
+    private void solveQueenPositionsStartingByColumn(final int column) {
         for (int row = 0; row < boardSize; row++) {
             if (isSafeToPutQueen(column, row)) {
                 board.placeQueen(column, row);
